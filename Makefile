@@ -30,14 +30,14 @@ _header:
 FICHEROS=-f docker-compose.yml
 
 _start-command:
-	@docker-compose $$FICHEROS up -d --remove-orphans
+	@docker compose $$FICHEROS up -d --remove-orphans
 
 start: _start-command _urls
 
 stop:
-	@docker-compose $$FICHEROS down
+	@docker compose $$FICHEROS down
 
 restart: stop start
 
 clean:
-	@docker-compose $$FICHEROS down -v --remove-orphans
+	@docker compose $$FICHEROS down -v --remove-orphans
