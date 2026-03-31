@@ -1,0 +1,4 @@
+COMPOSE_PROJECT_NAME=privatebin
+
+FQDN_TRAEFIK=traefik.privatebin.test
+FQDN_PRIVATEBIN=privatebin.test
